@@ -43,5 +43,5 @@ form.addEventListener('submit', function (e) {
   localStorage.setItem('userFullName', fullName);
 
   // ✅ Redirect after storing name
-  window.location.href = 'index.html';
+  window.location.href = 'practise.html';
 });
