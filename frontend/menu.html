@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Menu - Di's Canteen</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body> 
+  <header>
+    <h1>Our Menu</h1>
+    <br>
+    <nav>
+       <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="special.html">Daily Specials</a></li>
+    <li><a href="order.html">Your Orders</a></li>
+    <li><a href="order-summary.html">Order Summaries</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="data.html">Data Visualisation</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+  </ul>
+    </nav>
+  </header>
+  <main>
+
+<!-- BREAKFAST -  DONE -->
+<section class="menu-category">
+  <button class="menu-toggle">
+    <h2>Breakfast</h2>
+    <span class="arrow">▼</span>
+  </button>
+  <div class="menu-content">
+
+  <div class="menu-content">
+    <div class="menu-item">
+      <h3>Hash Browns - $1</h3>
+      <p>Crispy, golden and perfect for breakfast</p>
+      <p><strong>Halal, Vegan, Vegetarian</strong></p>
+      <button onclick="addToOrder('Hash Brown', 1)">Order</button>
+    </div>
+
+      <div class="menu-item">
+        <h3>Cheese and Bacon Rolls - $2.50</h3>
+        <p>Savoury, cheesy, with smoky bacon goodness.</p>
+        <p><strong>Not Halal, Not Vegetarian/Vegan, Contains Gluten</strong></p>
+        <button onclick="addToOrder('Cheese and Bacon Rolls', 2.50)">Order</button>
+      </div>
+
+      <div class="menu-item">
+        <h3>Scrambled Eggs on a Roll  - $3</h3>
+        <p> Fluffy eggs in a warm, fresh roll.</p>
+        <p><strong>Vegetarian, Halal, Contains Gluten</strong></p>
+        <button onclick="addToOrder('Scrambled Eggs Roll', 3)">Order</button>
+      </div>
+
+      <div class="menu-item">
+        <h3>Ham, Egg, and Cheese English Muffin - $3</h3>
+        <p>Savoury, cheesy, with smoky bacon goodness.</p>
+        <p><strong>Not Halal, Not vegetarian, Contains Gluten</strong></p>
+        <button onclick="addToOrder('Ham, Egg and Cheese English Muffin', 3)">Order</button>
+      </div>
+
+      <div class="menu-item">
+        <h3>Pikelets - $2</h3>
+        <p>Soft, sweet, and perfect for snacking.</p>
+        <p><strong>Vegetarian, Halal, Contains Gluten, Contains Dairy</strong></p>
+        <button onclick="addToOrder('Pikelets', 2)">Order</button>
+      </div>
+
+      <div class="menu-item">
+        <h3>Raisin Toast - $2</h3>
+        <p> Toasted with bursts of sweet raisins.</p>
+        <p><strong>Vegetarian, Halal, Contains Gluten</strong></p>
+        <button onclick="addToOrder('Raisin Toast', 2)">Order</button>
+      </div>
+
+      <div class="menu-item">
+        <h3>Corn Flakes - $2</h3>
+        <p>Light, crunchy, and ready to go.</p>
+        <p><strong>Vegan, Vegetarian, Halal, Gluten-free</strong></p>
+        <button onclick="addToOrder('Corn Flakes', 2)">Order</button>
+      </div>
+
+      <div class="menu-item">
+        <h3>Nutri-Grain - $2</h3>
+        <p>Energising crunch for a strong start.</p>
+        <p><strong>Vegetarian, Halal, Contains Gluten, Not Vegan (contains honey)</strong></p>
+        <button onclick="addToOrder('Nutri-Grain', 2)">Order</button>
+      </div>
+
+
+  </div>
+</section>
+
+<!-- SANDWICHES -  DONE -->
+<section class="menu-category">
+  <button class="menu-toggle">
+    <h2>Sandwiches</h2> <br>
+    <span class="arrow">▼</span>
+  </button>
+  <div class="menu-content">
+
+      <div class="menu-item">
+        <h3>Chicken Schnitzel and Cheese Sandwich - $4</h3>
+        <p>Chicken Schnitzel, aioli, lettuce, cheese, tomato and cucumber</p>
+        <p><strong>Halal</strong></p>
+        <button onclick="addToOrder('Chicken and Cheese Schnitzel Sandwich ', 4)">Order</button>
+      </div>
+
+      <div class="menu-item">
+        <h3>Chilli  Chicken Schnitzel - $3.50</h3>
+        <p>Chicken schnitzel, chilli sauce, herbed mayo and lettuce</p>
+        <p><strong>Halal</strong></p>
+        <button onclick="addToOrder('Chilli Chicken Sandwich ', 3.50)">Order</button>
+      </div>
+
+      <div class="menu-item">
+        <h3>Vegetarian Sandwich - $3.50</h3>
+        <p>Lettuce, cucumber, tomato, cheese, herbed mayo and roasted carrots</p>
+        <p><strong>Halal and Vegetarian</strong></p>
+        <button onclick="addToOrder('Vegetarian Sandwich ', 3.50)">Order</button>
+      </div>
+
+
+      <div class="menu-item">
+        <h3>Pulled Pork - $5</h3>
+        <p>Pulled pork, lettuce,  cheese, tomato and roasted carrots</p>
+        <p><strong>Not Halal</strong></p>
+        <button onclick="addToOrder('Pulled Pork Sandwich ', 5)">Order</button>
+      </div>
+
+
+     
+    </section>
+
+    <!-- BURGERS - DONE -->
+<section class="menu-category">
+  <button class="menu-toggle">
+    <h2>Burgers</h2> <br>
+    <span class="arrow">▼</span>
+  </button>
+  <div class="menu-content">
+
+    <div class="menu-item">
+        <h3>Spicy Chicken Burger - $5</h3>
+        <p>Chicken Schnitzel, lettuce and spicy herbed mayo</p>
+        <p><strong>Halal</strong></p>
+        <button onclick="addToOrder('Spicy Chicken Burger', 5)">Order</button>
+      </div>
+
+      <div class="menu-item">
+        <h3>Chicken Burger - $5</h3>
+        <p>Chicken Schnitzel, lettuce and herbed mayo</p>
+        <p><strong>Halal</strong></p>
+        <button onclick="addToOrder('Chicken Burger', 5)">Order</button>
+      </div>
+
+      <div class="menu-item">
+        <h3>Chicken Burger - $5</h3>
+        <p>Chicken Schnitzel, lettuce and herbed mayo</p>
+        <p><strong>Halal</strong></p>
+        <button onclick="addToOrder('Chicken Burger', 5)">Order</button>
+      </div>
+
+      <div class="menu-item">
+        <h3>Beef and Cheese Burger - $5</h3>
+        <p>Beef patty, cheese, lettuce, tomato and burger sauce </p>
+        <p><strong>Not Halal</strong></p>
+        <button onclick="addToOrder('Beef and Cheese Burger', 5)">Order</button>
+      </div>
+
+      <div class="menu-item">
+        <h3>Pulled Pork Burger - $6</h3>
+        <p>Slow cooked pulled pork with slaw and burger sauce</p>
+        <p><strong>Not Halal</strong></p>
+        <button onclick="addToOrder('Pulled Pork Burger', 6)">Order</button>
+      </div>
+
+
+  </div>
+</section>
+
+
+   <!-- SUSHI - done -->
+<section class="menu-category">
+  <button class="menu-toggle">
+    <h2>Sushi</h2> <br>
+    <span class="arrow">▼</span>
+  </button>
+  <div class="menu-content">
+
+     <div class="menu-item">
+        <h3>Chicken Katsu Sushi - $3.50</h3>
+        <p> Crispy chicken with savoury Japanese flavour.</p>
+        <p><strong>Halal</strong></p>
+        <button onclick="addToOrder('Chicken Katsu Sushi', 3.50)">Order</button>
+      </div>
+
+       <div class="menu-item">
+        <h3>Teriyaki Chicken Sushi - $3.50</h3>
+        <p>Sweet and savoury glazed chicken roll.</p>
+        <p><strong>Halal, Contains Gluten</strong></p>
+        <button onclick="addToOrder('Teriyaki Chicken Sushi', 3.50)">Order</button>
+      </div>
+
+       <div class="menu-item">
+        <h3>Tuna Sushi - $2.50</h3>
+        <p> Fresh and flavourful with a protein punch</p>
+        <p><strong>Halal, Pescatarian, Gluten-free</strong></p>
+        <button onclick="addToOrder('Tuna Sushi', 2.50)">Order</button>
+      </div>
+
+       <div class="menu-item">
+        <h3>Smoked Salmon Sushi - $3.50</h3>
+        <p>Rich, smooth, and perfectly salty.</p>
+        <p><strong>Halal, Pescatarian, Gluten-free</strong></p>
+        <button onclick="addToOrder('Smoked Salmon Sushi', 3.50)">Order</button>
+      </div>
+
+       <div class="menu-item">
+        <h3>Avocado and Cucumber Sushi - $3.50</h3>
+        <p>Cool, creamy, and super refreshing.</p>
+        <p><strong>Halal, Vegan, Vegetarian, Gluten-free</strong></p>
+        <button onclick="addToOrder('Avocado and Cucumber Sushi', 3.50)">Order</button>
+      </div>
+  </div>
+</section>
+  
+
+   <!-- PIZZA  - DONE -->
+<section class="menu-category">
+  <button class="menu-toggle">
+    <h2>Pizza</h2> <br>
+    <span class="arrow">▼</span>
+  </button>
+  <div class="menu-content">
+
+    <div class="menu-item">
+        <h3>Cheese Pizza - $3</h3>
+        <p>Personal round pizza with pizza sauce, herbs and cheese</p>
+        <p><strong>Halal, Vegetarian</strong></p>
+        <button onclick="addToOrder('Cheese Pizza', 3)">Order</button>
+      </div>
+
+       <div class="menu-item">
+        <h3>BBQ Chicken Pizza - $4</h3>
+        <p>Personal round pizza with BBQ sauce, chicken and cheese</p>
+        <p><strong>Halal</strong></p>
+        <button onclick="addToOrder('BBQ Chicken Pizza', 4)">Order</button>
+      </div>
+
+      <div class="menu-item">
+        <h3>Ham and Pineapple Pizza - $4</h3>
+        <p>Personal round pizza with pizza sauce, herbs, ham, pineapple and cheese</p>
+        <p><strong>Not Halal, Contains Gluten</strong></p>
+        <button onclick="addToOrder('Ham and Pineapple Pizza', 4)">Order</button>
+      </div>
+
+      <div class="menu-item">
+        <h3>Vegetarian Pizza - $3</h3>
+        <p>Personal round pizza with pizza sauce, herbs, seasonal vegetables and cheese</p>
+        <p><strong>Halal and Vegetarian</strong></p>
+        <button onclick="addToOrder('Vegetarian Pizza', 3)">Order</button>
+      </div>
+
+
+
+  </div>
+</section>
+
+
+   <!-- HOT FOODS  - DONE  -->
+<section class="menu-category">
+  <button class="menu-toggle">
+    <h2>Hot Foods</h2> <br>
+    <span class="arrow">▼</span>
+  </button>
+  <div class="menu-content">
+
+    <div class="menu-item">
+        <h3>Hot Dog - $2.50</h3>
+        <p>Juicy sausage in a warm soft bun.</p>
+        <p><strong>Not Halal and Contains Gluten</strong></p>
+        <button onclick="addToOrder('Hot Dog Pizza', 2.50)">Order</button>
+      </div>
+
+      <div class="menu-item">
+        <h3>6 Nuggets - $3.50</h3>
+        <p>Crunchy chicken bites, great for lunch!</p>
+        <p><strong>Halal and Contains Gluten</strong></p>
+        <button onclick="addToOrder('6 Nuggets', 3.50)">Order</button>
+      </div>
+
+       <div class="menu-item">
+        <h3>Beef and Chicken Noodle Cup - $3</h3>
+        <p>Warm, quick, and slurp-worthy snack</p>
+        <p><strong>Halal and Contains Gluten</strong></p>
+        <button onclick="addToOrder('Beef and Chicken Noodle Cup', 3)">Order</button>
+      </div>
+
+      <div class="menu-item">
+        <h3>Mince Beef Pie - $3.50</h3>
+        <p>Flaky pastry with hearty beef filling.</p>
+        <p><strong>Not Halal and Contains Gluten</strong></p>
+        <button onclick="addToOrder('Mince Beef Pie', 3.50)">Order</button>
+      </div>
+
+      <div class="menu-item">
+        <h3>Potato Wedges - $2.50</h3>
+        <p>Crispy, seasoned, and great for sharing..</p>
+        <p><strong>Halal, Vegetarian, Vegan, Gluten-free</strong></p>
+        <button onclick="addToOrder('Potato Wedges ', 2.50)">Order</button>
+      </div>
+
+      <div class="menu-item">
+        <h3>Cheese Toastie - $2</h3>
+        <p>Toasted, melty, and oh-so-cheesy.</p>
+        <p><strong>Halal, Vegetarian, Contains Gluten and Contains Dairy</strong></p>
+        <button onclick="addToOrder('Cheese Toastie', 2)">Order</button>
+      </div>
+
+      <div class="menu-item">
+        <h3>Garlic Bread - $2</h3>
+        <p>Buttery garlic spread on Turkish bread..</p>
+        <p><strong>Halal, Vegetarian, Contains Gluten and Contains Dairy</strong></p>
+        <button onclick="addToOrder('Garlic Bread', 2)">Order</button>
+      </div>
+  </div>
+</section>
+
+ <!-- ITALIAN FOODS  - DONE -->
+<section class="menu-category">
+  <button class="menu-toggle">
+    <h2>Italian</h2> <br>
+    <span class="arrow">▼</span>
+  </button>
+  <div class="menu-content">
+
+     <div class="menu-item">
+        <h3>Beef Lasagne - $4.50</h3>
+        <p>Layers of lasagne sheets, topped with mince ragu, bechamel sauce and cheese</p>
+        <p><strong>Halal and Contains Gluten</strong></p>
+        <button onclick="addToOrder('Beef Lasagne', 4.50)">Order</button>
+      </div>
+
+       <div class="menu-item">
+        <h3>Vegetarian Lasagne - $4.50</h3>
+        <p>Layers of lasagne sheets, topped with sauteed seasonal vegetables, bechamel sauce and cheese</p>
+        <p><strong>Halal, Vegetarian and Contains Gluten</strong></p>
+        <button onclick="addToOrder('Vegetarian Lasagne', 4.50)">Order</button>
+      </div>
+
+      <div class="menu-item">
+        <h3>Burrito - $5</h3>
+        <p>Mince with a taco seasoning on a warm tortilla with lettuce, tomato, rice and cheese</p>
+        <p><strong>Halal and Contains Gluten</strong></p>
+        <button onclick="addToOrder('Burrito', 5)">Order</button>
+      </div>
+
+      <div class="menu-item">
+        <h3>Fettuccine Boscaiola - $5</h3>
+        <p>Creamy fettuccine with ham and mushrooms</p>
+        <p><strong>Not Halal and Contains Gluten</strong></p>
+        <button onclick="addToOrder('Fettuccine Boscaiola', 5)">Order</button>
+      </div>
+
+
+       <div class="menu-item">
+        <h3>Spaghetti Bolognese - $5</h3>
+        <p>Mince ragu served with spaghetti</p>
+        <p><strong>Halal and Contains Gluten</strong></p>
+        <button onclick="addToOrder('Spaghetti Bolognese', 5)">Order</button>
+      </div>
+
+        <div class="menu-item">
+        <h3>Mince Nachoes - $4.50</h3>
+        <p>Seasoned mince on a bed of corn chips with salsa and cheese</p>
+        <p><strong>Halal and Contains Gluten</strong></p>
+        <button onclick="addToOrder('Mince Nachoes', 4.50)">Order</button>
+      </div>
+
+
+
+  </div>
+</section>
+
+
+   <!-- SNACKS - DONE -->
+<section class="menu-category">
+  <button class="menu-toggle">
+    <h2>Snacks</h2> <br>
+    <span class="arrow">▼</span>
+  </button>
+  <div class="menu-content">
+
+
+    <div class="menu-item">
+        <h3>Fruit Salad - $3</h3>
+        <p>Seasonal fruit salad</p>
+        <p><strong>Halal, Vegetarian, Vegan, Gluten-Free</strong></p>
+        <button onclick="addToOrder('Fruit Salad', 3)">Order</button>
+      </div>
+
+      <div class="menu-item">
+        <h3>Yoghurt - $1</h3>
+        <p>Creamy and refreshing dairy treat.</p>
+        <p><strong>Halal, Vegetarian, Contains Dairy, Gluten-Free</strong></p>
+        <button onclick="addToOrder('Yoghurt', 1)">Order</button>
+      </div>
+
+
+      <div class="menu-item">
+        <h3>Banana Bread - $3</h3>
+        <p>Moist and sweet, made in-house.</p>
+        <p><strong>Vegetarian, Halal, Contains Gluten, Contains Eggs & Dairy</strong></p>
+        <button onclick="addToOrder('Banana Bread', 3)">Order</button>
+      </div>
+
+
+      <div class="menu-item">
+        <h3>Ice Block - $1</h3>
+        <p>Fruity, icy, and super refreshing!</p>
+        <p><strong>Vegan, Vegetarian, Halal, Gluten-Free</strong></p>
+        <button onclick="addToOrder('Ice Block', 1)">Order</button>
+      </div>
+
+
+      <div class="menu-item">
+        <h3>Chips - $1.50</h3>
+        <p>Crsipy potato goodness with seasoning</p>
+        <p><strong>Vegetarian, Halal, Contains Gluten</strong></p>
+        <button onclick="addToOrder('Chips', 1.50)">Order</button>
+      </div>
+
+      
+
+
+
+
+
+
+</div>
+</section>
+
+
+   <!-- dDRINKS - DONE-->
+<section class="menu-category">
+  <button class="menu-toggle">
+    <h2>Drinks</h2> <br>
+    <span class="arrow">▼</span>
+  </button>
+  <div class="menu-content">
+
+
+     <div class="menu-item">
+        <h3>Water - $2</h3>
+        <p>Seasonal fruit salad</p>
+        <button onclick="addToOrder('Water', 2)">Order</button>
+      </div>
+
+
+       <div class="menu-item">
+        <h3>Juice Box - $2.50</h3>
+        <button onclick="addToOrder('Juice Box', 2.50)">Order</button>
+      </div>
+
+
+       <div class="menu-item">
+        <h3>Soda Can - $3</h3>
+        <button onclick="addToOrder('Soda Can', 3)">Order</button>
+      </div>
+
+
+       <div class="menu-item">
+        <h3>300mL Flavoured Milk - $3</h3>
+        <button onclick="addToOrder('300mL Flavoured Milk ', 3)">Order</button>
+      </div>
+
+
+       <div class="menu-item">
+        <h3>600mL Flavoured Milk - $3.50</h3>
+        <button onclick="addToOrder('600mL Flavoured Milk ', 3.50)">Order</button>
+      </div>
+
+
+
+  </div>
+</section>
+
+
+
+
+
+  </main>
+  <footer>
+    <p>&copy; 2025 Di's Canteen. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

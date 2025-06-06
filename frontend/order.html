@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Place Order - Di's Canteen</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>Place Your Order</h1>
+    <br>
+    <nav> 
+      <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="special.html">Daily Specials</a></li>
+    <li><a href="order.html">Your Orders</a></li>
+    <li><a href="order-summary.html">Order Summaries</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="data.html">Data Visualisation</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+  </ul>
+    </nav>
+  </header>
+  <main>
+    <form id="orderForm">
+      <label for="customerName">Your Name:</label>
+      <input type="text" id="customerName" name="customerName" required />
+
+<label for="pickupDate">Pickup Date:</label>
+<input type="date" id="pickupDate" name="pickupDate" required />
+
+<label for="pickupTime">Pickup Time:</label>
+<input type="time" id="pickupTime" name="pickupTime" min="08:00" max="15:00" required />
+
+
+      <h2>Your Order:</h2>
+      <ul id="orderList"></ul>
+
+    <h2>Your Order:</h2>
+<ul id="orderList"></ul>
+<p>Total: $<span id="totalAmount">0.00</span></p>
+
+<button type="button" onclick="clearOrder()">🗑️ Clear My Order</button>
+<button type="submit">Submit Order</button>
+
+
+      
+    </form>
+  </main>
+  <footer>
+    <p>&copy; 2025 Di's Canteen. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

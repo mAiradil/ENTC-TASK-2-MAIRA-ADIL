@@ -1,64 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food Website</title>
-    
-    <!-- css file link-->
-     <link rel="stylesheet" href="index.css">
-
-     <!-- font awesome link -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Di's Canteen</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
+  <!-- Instructional Modal -->
+<div id="instructionModal" class="modal">
+  <div class="modal-content">
+    <h2>How to Order</h2>
+    <ol class="instruction-list">
+      <li>Review our menu</li>
+      <li>Place your order</li>
+      <li>Enter your name, pickup time and pickup date</li>
+      <li>Review your order and your done!</li>
+    </ol>
+    <button id="closeInstruction" class="btn-dark">Got it!</button>
+  </div>
+</div>
 
-    <div id="container" class="container">
-        <div id="menu">
-            <div class="brand-logo">
-                <img src="/img/logo.png" alt="logo">
-            </div>
-            <div class="menu-item">
-                <a href="#">Home</a>
-                <a href="#">Place an Order</a>
-                <a href="#">Your Orders</a>
-                <a href="#">Cart</a>
-                <a href="#">Data Visualisation</a>
-                <a href="#">FAQ</a>
-            </div>
-           
-        </div>
-        <div id="food-container">
-            <div id="header">
-                <div class="add-box">
-                    <i class="fa fa-map-marker your-address" id="add-address">Your Address</i>
-                </div>
-                <div class="util">
-                    <i class="fa fa-search"> Search</i>
-                    <i class="fa fa-tags"> Offers </i>
-                    <i class="fa fa-cart-plus" id="cart-plus"> 0 Items </i>
-                </div>
-            </div>
+  <header>
+      <h1 class="typewriter-text">Welcome to Di's Canteen</h1>
+    <br>
+    <nav>
+      <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="special.html">Daily Specials</a></li>
+    <li><a href="order.html">Your Orders</a></li>
+    <li><a href="order-summary.html">Order Summaries</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="data.html">Data Visualisation</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+  </ul>
+    </nav>
+  </header>
 
-            <div id="food-items">
-                <div id="biryani">
-                    <p id="category-name"> Breakfast </p>
-                    <div id="item-card">
-                        <div id="card-top">
-                            <i class="fa fa-star" id="rating"> $.3</i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="cart">
-            <h1>I am cart box
-            </h1>
-        </div>
+  <main>
+    <section class="intro">
+      <h2>Fresh and Delicious Meals Await!</h2>
+     
+      <p>Explore our diverse menu and place your order online for a quick and convenient pickup.</p>
+      <a href="menu.html" class="btn">View Menu</a>
+    </section>
+     <br>
 
-    </div>
+    <section class="features">
+      <h2>Why Choose Us?</h2>
+       <br>
+       <br>
+      <div class="feature">
+        
+        <h3>Fresh Ingredients</h3>
+         <br>
+        <p>Our meals are prepared with fresh, locally sourced ingredients from Australian farms.</p>
+        <br>
+      </div>
+      <div class="feature">
     
+      
+        <h3>100% Halal</h3>
+        <br>
+        <p>We are committed to providing halal-certified meals for our community.</p>
+        <br>
+
+
+        <div class="feature">
+  <h3>Convenient Online Ordering</h3>
+  <br>
+  <p>Order anytime, anywhere. Skip the queues and get your meal faster!</p>
+  <br>
+</div>
+
+<div class="feature">
+  <h3>Healthy Options</h3>
+  <br>
+  <p>We offer balanced meals with nutritious ingredients to fuel your day.</p>
+  <br>
+</div>
+
+<div class="feature">
+  <h3>Made Fresh Daily</h3>
+  <br>
+  <p>All items are freshly made each morning by our canteen staff.</p>
+  <br>
+</div>
+
+<div class="feature">
+  <h3>Dietary-Friendly Choices</h3>
+  <br>
+  <p>Vegan, vegetarian, and gluten-free options available for all needs.</p>
+  <br>
+</div>
+
+<div class="feature">
+  <h3>Supports Local Schools</h3>
+  <br>
+  <p>Profits go back into school programs, equipment, and student services.</p>
+  <br>
+</div>
+
+
+<div class="feature">
+  <h3>Clear Labels</h3>
+  <br>
+  <p>Each item includes dietary tags, ingredients, and allergy info.</p>
+  <br>
+</div>
+
+<div class="feature">
+  <h3>Student-Focused Menu</h3>
+  <br>
+  <p>Affordable, tasty meals designed with student favourites in mind.</p>
+  <br>
+</div>
+
+
+
+       
+      </div>
+    </section>
+<br>
+     <br>
+    <section class="location" style="text-align: center;">
+      <h2>Find Us Here</h2>
+      <br>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6615.68173632976!2d150.87991287279758!3d-33.99662095947458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12eb133ced4df1%3A0xd14f41a8fe4e0613!2sMacquarie%20Fields%20High%20School%2C%20School%20Grounds!5e0!3m2!1sen!2sus!4v1748934580034!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+     <br>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Di's Canteen. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

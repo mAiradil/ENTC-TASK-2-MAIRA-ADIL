@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Daily Specials - Di's Canteen</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>Daily Specials</h1>
+    <br>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="special.html">Daily Specials</a></li>
+        <li><a href="order.html">Your Orders</a></li>
+        <li><a href="order-summary.html">Order Summaries</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="data.html">Data Visualisation</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+
+<!-- MONDAY -->
+<section class="menu-category special-highlight">
+  <button class="menu-toggle">
+    <h2>🥯 Monday Specials</h2>
+    <span class="arrow">▼</span>
+  </button>
+  <div class="menu-content">
+    <div class="menu-item">
+      <h3>Mac & Cheese Bites - $3</h3>
+      <p>Crispy on the outside, cheesy on the inside.</p>
+      <p><strong>Vegetarian, Halal</strong></p>
+      <button onclick="addToOrder('Mac & Cheese Bites', 3)">Order</button>
+    </div>
+    <div class="menu-item">
+      <h3>BBQ Chicken Wrap - $5</h3>
+      <p>Grilled BBQ chicken, salad, and mayo in a soft wrap.</p>
+      <p><strong>Halal</strong></p>
+      <button onclick="addToOrder('BBQ Chicken Wrap', 5)">Order</button>
+    </div>
+    <div class="menu-item">
+      <h3>Peach Iced Tea - $2.50</h3>
+      <p>Refreshing and fruity homemade tea.</p>
+      <p><strong>Vegan, Halal</strong></p>
+      <button onclick="addToOrder('Peach Iced Tea', 2.50)">Order</button>
+    </div>
+  </div>
+</section>
+
+<!-- TUESDAY -->
+<section class="menu-category special-highlight">
+  <button class="menu-toggle">
+    <h2>🌮 Tuesday Specials</h2>
+    <span class="arrow">▼</span>
+  </button>
+  <div class="menu-content">
+    <div class="menu-item">
+      <h3>Butter Chicken & Rice - $5</h3>
+      <p>Rich, creamy Indian-style butter chicken with rice.</p>
+      <p><strong>Halal, Contains Dairy</strong></p>
+      <button onclick="addToOrder('Butter Chicken & Rice', 5)">Order</button>
+    </div>
+    <div class="menu-item">
+      <h3>Veggie Stir Fry Noodles - $4.50</h3>
+      <p>Noodles tossed in soy sauce with mixed veggies.</p>
+      <p><strong>Halal, Vegetarian, Contains Gluten</strong></p>
+      <button onclick="addToOrder('Veggie Stir Fry Noodles', 4.50)">Order</button>
+    </div>
+    <div class="menu-item">
+      <h3>Choc-Banana Smoothie - $3.50</h3>
+      <p>Delicious smoothie blend of banana and chocolate.</p>
+      <p><strong>Vegetarian, Halal</strong></p>
+      <button onclick="addToOrder('Choc-Banana Smoothie', 3.50)">Order</button>
+    </div>
+  </div>
+</section>
+
+<!-- WEDNESDAY -->
+<section class="menu-category special-highlight">
+  <button class="menu-toggle">
+    <h2>🥗 Wednesday Specials</h2>
+    <span class="arrow">▼</span>
+  </button>
+  <div class="menu-content">
+    <div class="menu-item">
+      <h3>Loaded Nacho Bowl - $5</h3>
+      <p>Corn chips topped with spicy beef mince, melted cheese, salsa, and sour cream.</p>
+      <p><strong>Halal, Contains Dairy, Gluten-Free</strong></p>
+      <button onclick="addToOrder('Loaded Nacho Bowl', 5)">Order</button>
+    </div>
+    <div class="menu-item">
+      <h3>Chicken Alfredo Pasta - $5</h3>
+      <p>Creamy Alfredo sauce with grilled chicken and fettuccine noodles.</p>
+      <p><strong>Halal, Contains Gluten & Dairy</strong></p>
+      <button onclick="addToOrder('Chicken Alfredo Pasta', 5)">Order</button>
+    </div>
+    <div class="menu-item">
+      <h3>Spicy Veggie Wrap - $4.50</h3>
+      <p>Roasted veggies, spicy hummus, and fresh lettuce in a tortilla wrap.</p>
+      <p><strong>Vegetarian, Halal, Vegan Option Available</strong></p>
+      <button onclick="addToOrder('Spicy Veggie Wrap', 4.50)">Order</button>
+    </div>
+    <div class="menu-item">
+      <h3>Churros with Chocolate Dip - $3.50</h3>
+      <p>Warm cinnamon-sugar churros served with rich chocolate sauce.</p>
+      <p><strong>Vegetarian, Halal, Contains Gluten</strong></p>
+      <button onclick="addToOrder('Churros with Chocolate Dip', 3.50)">Order</button>
+    </div>
+    <div class="menu-item">
+      <h3>Passionfruit Iced Tea - $2.50</h3>
+      <p>Cool and tangy house-made iced tea with passionfruit flavour.</p>
+      <p><strong>Halal, Vegan, Gluten-Free</strong></p>
+      <button onclick="addToOrder('Passionfruit Iced Tea', 2.50)">Order</button>
+    </div>
+  </div>
+</section>
+
+<!-- THURSDAY -->
+<section class="menu-category special-highlight">
+  <button class="menu-toggle">
+    <h2>🍝 Thursday Specials</h2>
+    <span class="arrow">▼</span>
+  </button>
+  <div class="menu-content">
+    <div class="menu-item">
+      <h3>Sweet Chilli Chicken Tenders - $4.50</h3>
+      <p>Chicken tenders tossed in sweet chilli sauce.</p>
+      <p><strong>Halal, Contains Gluten</strong></p>
+      <button onclick="addToOrder('Sweet Chilli Chicken Tenders', 4.50)">Order</button>
+    </div>
+    <div class="menu-item">
+      <h3>Pesto Pasta Salad - $3.50</h3>
+      <p>Cold pasta salad with basil pesto, cherry tomatoes, and cheese.</p>
+      <p><strong>Vegetarian, Halal, Contains Gluten</strong></p>
+      <button onclick="addToOrder('Pesto Pasta Salad', 3.50)">Order</button>
+    </div>
+    <div class="menu-item">
+      <h3>Mango Juice - $2.50</h3>
+      <p>Cool, refreshing juice with ripe mango flavour.</p>
+      <p><strong>Vegan, Halal, Gluten-Free</strong></p>
+      <button onclick="addToOrder('Mango Juice', 2.50)">Order</button>
+    </div>
+  </div>
+</section>
+
+<!-- FRIDAY -->
+<section class="menu-category special-highlight">
+  <button class="menu-toggle">
+    <h2>🍕 Friday Specials</h2>
+    <span class="arrow">▼</span>
+  </button>
+  <div class="menu-content">
+    <div class="menu-item">
+      <h3>Fish Tacos - $4.50</h3>
+      <p>Soft tacos with crispy fish, slaw, and tangy sauce.</p>
+      <p><strong>Pescatarian, Halal Option</strong></p>
+      <button onclick="addToOrder('Fish Tacos', 4.50)">Order</button>
+    </div>
+    <div class="menu-item">
+      <h3>Cheesy Garlic Pizza - $3</h3>
+      <p>Mini pizza base topped with garlic butter and cheese.</p>
+      <p><strong>Vegetarian, Halal, Contains Gluten</strong></p>
+      <button onclick="addToOrder('Cheesy Garlic Pizza', 3)">Order</button>
+    </div>
+    <div class="menu-item">
+      <h3>Strawberry Milkshake - $3</h3>
+      <p>Creamy and fruity shake made in-house.</p>
+      <p><strong>Vegetarian, Halal, Contains Dairy</strong></p>
+      <button onclick="addToOrder('Strawberry Milkshake', 3)">Order</button>
+    </div>
+  </div>
+</section>
+
+  </main>
+  <footer>
+    <p>&copy; 2025 Di's Canteen. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
