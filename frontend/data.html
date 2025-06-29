@@ -25,168 +25,164 @@
   </header>
 
   <main>
-    <u><h2>Total Orders Comparison: Manual vs. Online System</h2></u>
-    <br>
-    <br>
-    <div class='tableauPlaceholder' id='viz1749193158618' style='position: relative'>
-      <noscript><a href='#'><img alt='Total Orders Based on System Used (Manual or Online)' src='https://public.tableau.com/static/images/Ma/MairaA-OnlineCanteenSystem/Sheet2/1_rss.png' style='border: none' /></a></noscript>
-      <object class='tableauViz' style='display:none;'>
-        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-        <param name='embed_code_version' value='3' />
-        <param name='site_root' value='' />
-        <param name='name' value='MairaA-OnlineCanteenSystem/Sheet2' />
-        <param name='tabs' value='no' />
-        <param name='toolbar' value='yes' />
-        <param name='static_image' value='https://public.tableau.com/static/images/Ma/MairaA-OnlineCanteenSystem/Sheet2/1.png' />
-        <param name='animate_transition' value='yes' />
-        <param name='display_static_image' value='yes' />
-        <param name='display_spinner' value='yes' />
-        <param name='display_overlay' value='yes' />
-        <param name='display_count' value='yes' />
-        <param name='language' value='en-US' />
-        <param name='filter' value='publish=yes' />
-      </object>
-    </div>
-    <script type='text/javascript'>
-      var divElement = document.getElementById('viz1749193158618');
-      var vizElement = divElement.getElementsByTagName('object')[0];
-      vizElement.style.width='100%';
-      vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
-      var scriptElement = document.createElement('script');
-      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-      vizElement.parentNode.insertBefore(scriptElement, vizElement);
-    </script>
+   <style>
+  details {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 1.5em;
+    padding: 1em;
+    background-color: #f9f9f9;
+  }
 
-    <section class="chart-description">
-      <br>
-      <h3>Detailed Analysis</h3>
-  
-      <br>
-      <p>This chart visually compares the total number of food orders placed using the <strong>manual ordering system</strong> versus the <strong>online ordering system</strong> over a four-week period. As seen in the chart, the number of orders during the manual ordering phase remains relatively low and stable each week, with only minor fluctuations. This trend reflects the inefficiency of the manual system, where students may have avoided ordering due to long queues, time limitations, or lack of awareness.</p>
-      <br>
-      <p>The visualisation makes it easy to see that the transition to an online sys
-        tem not only boosted total sales but also improved engagement with the canteen's 
-        services. By streamlining the ordering process, the canteen could handle more orders 
-        efficiently, reduce congestion, and increase student satisfaction. This insight supports 
-        the strategic decision to continue investing in digital solutions for school services.</p>
-    </section>
-<br>
-<br>
-    <u><h2>Average Number of Orders: Manual vs. Online</h2></u>
-    <br>
-    <br>
-    <div class='tableauPlaceholder' id='viz1749196459256' style='position: relative'>
-      <noscript><a href='#'><img alt='Average Number of Orders' src='https://public.tableau.com/static/images/Ma/MairaA-OnlineCanteenSystem2/Sheet3/1_rss.png' style='border: none' /></a></noscript>
-      <object class='tableauViz' style='display:none;'>
-        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-        <param name='embed_code_version' value='3' />
-        <param name='site_root' value='' />
-        <param name='name' value='MairaA-OnlineCanteenSystem2/Sheet3' />
-        <param name='tabs' value='no' />
-        <param name='toolbar' value='yes' />
-        <param name='static_image' value='https://public.tableau.com/static/images/Ma/MairaA-OnlineCanteenSystem2/Sheet3/1.png' />
-        <param name='animate_transition' value='yes' />
-        <param name='display_static_image' value='yes' />
-        <param name='display_spinner' value='yes' />
-        <param name='display_overlay' value='yes' />
-        <param name='display_count' value='yes' />
-        <param name='language' value='en-US' />
-        <param name='filter' value='publish=yes' />
-      </object>
-    </div>
-    <script type='text/javascript'>
-      var divElement = document.getElementById('viz1749196459256');
-      var vizElement = divElement.getElementsByTagName('object')[0];
-      vizElement.style.width='100%';
-      vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
-      var scriptElement = document.createElement('script');
-      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-      vizElement.parentNode.insertBefore(scriptElement, vizElement);
-    </script>
-<br>
-<br>
-    <section class="chart-description">
-      <h3>Average Orders Breakdown</h3>
-      <br>
-      <p>This bar graph shows a simple and clear comparison of the <strong>average number of orders</strong> placed using both the manual system and the online ordering system. The height of each bar visually highlights the huge improvement that occurred when the online system was introduced.</p>
-<br>
-      <p>On the left, the manual system's bar is much shorter, representing fewer average orders per week. 
-        This shows that not many students consistently ordered food when it was done manually. 
-        On the right, the bar for the online system is much taller, which shows how online ordering 
-        made it easier and more appealing for students to order regularly.</p>
-<br>
-      <p>Because the graph is so simple and easy to read, it makes the point very clearly: 
-        switching to online ordering boosted the average weekly order volume by a large margin. 
-        This proves how effective and useful the new system is for both students and the canteen.</p>
-    </section>
+  summary {
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+  }
 
+  summary:hover {
+    color: #0078d7;
+  }
 
-    <br>
-<u><h2>Most Popular Canteen Items</h2></u>
-<br>
-<br>
-<div class='tableauPlaceholder' id='viz1750480023719' style='position: relative'>
-  <noscript>
-    <a href='#'>
-      <img alt='Most Popular Items' src='https://public.tableau.com/static/images/Ma/MairaA-OnlineCanteenSystem-Dashboard-5/Sheet4/1_rss.png' style='border: none' />
-    </a>
-  </noscript>
-  <object class='tableauViz' style='display:none;'>
-    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-    <param name='embed_code_version' value='3' />
-    <param name='site_root' value='' />
-    <param name='name' value='MairaA-OnlineCanteenSystem-Dashboard-5/Sheet4' />
-    <param name='tabs' value='no' />
-    <param name='toolbar' value='yes' />
-    <param name='static_image' value='https://public.tableau.com/static/images/Ma/MairaA-OnlineCanteenSystem-Dashboard-5/Sheet4/1.png' />
-    <param name='animate_transition' value='yes' />
-    <param name='display_static_image' value='yes' />
-    <param name='display_spinner' value='yes' />
-    <param name='display_overlay' value='yes' />
-    <param name='display_count' value='yes' />
-    <param name='language' value='en-AU' />
-    <param name='filter' value='publish=yes' />
-  </object>
-</div>
-<script type='text/javascript'>
-  var divElement = document.getElementById('viz1750480023719');
-  var vizElement = divElement.getElementsByTagName('object')[0];
-  vizElement.style.width='100%';
-  vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
-  var scriptElement = document.createElement('script');
-  scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-  vizElement.parentNode.insertBefore(scriptElement, vizElement);
-</script>
+  .chart-description {
+    margin-top: 1em;
+  }
+</style>
+
+<details>
+  <summary>Total Orders Comparison: Manual vs. Online System</summary>
+
+  <br>
+  <div class='tableauPlaceholder' id='viz1749193158618' style='position: relative'>
+    <noscript><a href='#'><img alt='Total Orders Based on System Used (Manual or Online)' src='https://public.tableau.com/static/images/Ma/MairaA-OnlineCanteenSystem/Sheet2/1_rss.png' style='border: none' /></a></noscript>
+    <object class='tableauViz' style='display:none;'>
+      <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+      <param name='embed_code_version' value='3' />
+      <param name='site_root' value='' />
+      <param name='name' value='MairaA-OnlineCanteenSystem/Sheet2' />
+      <param name='tabs' value='no' />
+      <param name='toolbar' value='yes' />
+      <param name='static_image' value='https://public.tableau.com/static/images/Ma/MairaA-OnlineCanteenSystem/Sheet2/1.png' />
+      <param name='animate_transition' value='yes' />
+      <param name='display_static_image' value='yes' />
+      <param name='display_spinner' value='yes' />
+      <param name='display_overlay' value='yes' />
+      <param name='display_count' value='yes' />
+      <param name='language' value='en-US' />
+      <param name='filter' value='publish=yes' />
+    </object>
+  </div>
+
+  <script type='text/javascript'>
+    var divElement = document.getElementById('viz1749193158618');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    vizElement.style.width = '100%';
+    vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  </script>
+
+  <section class="chart-description">
+    <h3>Detailed Analysis</h3>
+    <p>This chart visually compares the total number of food orders placed using the <strong>manual ordering system</strong> versus the <strong>online ordering system</strong> over a four-week period. As seen in the chart, the number of orders during the manual ordering phase remains relatively low and stable each week, with only minor fluctuations. This trend reflects the inefficiency of the manual system, where students may have avoided ordering due to long queues, time limitations, or lack of awareness.</p>
+    <p>The visualisation makes it easy to see that the transition to an online system not only boosted total sales but also improved engagement with the canteen's services. By streamlining the ordering process, the canteen could handle more orders efficiently, reduce congestion, and increase student satisfaction. This insight supports the strategic decision to continue investing in digital solutions for school services.</p>
+  </section>
+</details>
 
 <br>
-<section class="chart-description">
-  <h3>Student Food Preferences in Detail</h3>
+<br>
+   <details>
+  <summary>Average Number of Orders: Manual vs. Online</summary>
+
   <br>
-  <p>
-    This visualisation showcases the most popular items ordered from the school canteen, broken down 
-    by ordering method, manual versus online. The stacked bars allow us to clearly see not only which 
-    items are favourites, but also how ordering behaviour has shifted between systems.
-  </p>
+  <div class='tableauPlaceholder' id='viz1749196459256' style='position: relative'>
+    <noscript><a href='#'><img alt='Average Number of Orders' src='https://public.tableau.com/static/images/Ma/MairaA-OnlineCanteenSystem2/Sheet3/1_rss.png' style='border: none' /></a></noscript>
+    <object class='tableauViz' style='display:none;'>
+      <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+      <param name='embed_code_version' value='3' />
+      <param name='site_root' value='' />
+      <param name='name' value='MairaA-OnlineCanteenSystem2/Sheet3' />
+      <param name='tabs' value='no' />
+      <param name='toolbar' value='yes' />
+      <param name='static_image' value='https://public.tableau.com/static/images/Ma/MairaA-OnlineCanteenSystem2/Sheet3/1.png' />
+      <param name='animate_transition' value='yes' />
+      <param name='display_static_image' value='yes' />
+      <param name='display_spinner' value='yes' />
+      <param name='display_overlay' value='yes' />
+      <param name='display_count' value='yes' />
+      <param name='language' value='en-US' />
+      <param name='filter' value='publish=yes' />
+    </object>
+  </div>
+
+  <script type='text/javascript'>
+    var divElement = document.getElementById('viz1749196459256');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    vizElement.style.width = '100%';
+    vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  </script>
+
+  <section class="chart-description">
+    <h3>Average Orders Breakdown</h3>
+    <p>This bar graph shows a simple and clear comparison of the <strong>average number of orders</strong> placed using both the manual system and the online ordering system. The height of each bar visually highlights the huge improvement that occurred when the online system was introduced.</p>
+    <p>On the left, the manual system's bar is much shorter, representing fewer average orders per week. This shows that not many students consistently ordered food when it was done manually. On the right, the bar for the online system is much taller, which shows how online ordering made it easier and more appealing for students to order regularly.</p>
+    <p>Because the graph is so simple and easy to read, it makes the point very clearly: switching to online ordering boosted the average weekly order volume by a large margin. This proves how effective and useful the new system is for both students and the canteen.</p>
+  </section>
+</details>
+
+
+
+    <br><details>
+  <summary>Most Popular Canteen Items</summary>
+
   <br>
-  <p>
-    Items like Meat Pies and Mince Nachos top the chart, demonstrating strong overall popularity. 
-    However, the visual difference between the blue (manual) and orange (online) segments highlights 
-    a key trend: more students are choosing to order these items online. This shift suggests that 
-    popular products benefit the most from being available in a faster, digital format.
-  </p>
-  <br>
-  <p>
-    This graph tells an important story about what students actually want. The data is meaningful 
-    because it proves demand patterns, supports menu planning, and shows how digital ordering increases 
-    accessibility to in-demand food. It also helps reduce waste by helping the canteen predict what items 
-    to stock more of based on ordering method.
-  </p>
-  <br>
-  <p>
-    Overall, this data backs up the success of the online system and provides real insights that can 
-    help the school improve both the student experience and the efficiency of the canteen.
-  </p>
-</section>
+  <div class='tableauPlaceholder' id='viz1750480023719' style='position: relative'>
+    <noscript>
+      <a href='#'>
+        <img alt='Most Popular Items' src='https://public.tableau.com/static/images/Ma/MairaA-OnlineCanteenSystem-Dashboard-5/Sheet4/1_rss.png' style='border: none' />
+      </a>
+    </noscript>
+    <object class='tableauViz' style='display:none;'>
+      <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+      <param name='embed_code_version' value='3' />
+      <param name='site_root' value='' />
+      <param name='name' value='MairaA-OnlineCanteenSystem-Dashboard-5/Sheet4' />
+      <param name='tabs' value='no' />
+      <param name='toolbar' value='yes' />
+      <param name='static_image' value='https://public.tableau.com/static/images/Ma/MairaA-OnlineCanteenSystem-Dashboard-5/Sheet4/1.png' />
+      <param name='animate_transition' value='yes' />
+      <param name='display_static_image' value='yes' />
+      <param name='display_spinner' value='yes' />
+      <param name='display_overlay' value='yes' />
+      <param name='display_count' value='yes' />
+      <param name='language' value='en-AU' />
+      <param name='filter' value='publish=yes' />
+    </object>
+  </div>
+
+  <script type='text/javascript'>
+    var divElement = document.getElementById('viz1750480023719');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    vizElement.style.width = '100%';
+    vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  </script>
+
+  <section class="chart-description">
+    <h3>Student Food Preferences in Detail</h3>
+    <p>This visualisation showcases the most popular items ordered from the school canteen, broken down by ordering method, manual versus online. The stacked bars allow us to clearly see not only which items are favourites, but also how ordering behaviour has shifted between systems.</p>
+    <p>Items like Meat Pies and Mince Nachos top the chart, demonstrating strong overall popularity. However, the visual difference between the blue (manual) and orange (online) segments highlights a key trend: more students are choosing to order these items online. This shift suggests that popular products benefit the most from being available in a faster, digital format.</p>
+    <p>This graph tells an important story about what students actually want. The data is meaningful because it proves demand patterns, supports menu planning, and shows how digital ordering increases accessibility to in-demand food. It also helps reduce waste by helping the canteen predict what items to stock more of based on ordering method.</p>
+    <p>Overall, this data backs up the success of the online system and provides real insights that can help the school improve both the student experience and the efficiency of the canteen.</p>
+  </section>
+</details>
+
 
 
 
@@ -209,42 +205,7 @@
 <u><h2>Dashboard Overview: Orders, Trends & Averages</h2></u>
 <br>
 <br>
-<div class='tableauPlaceholder' id='viz1749197883152' style='position: relative'>
-  <noscript><a href='#'><img alt='Dashboard 1' src='https://public.tableau.com/static/images/Ma/MairaA-OnlineCanteenSystem-Dashboard/Dashboard1/1_rss.png' style='border: none' /></a></noscript>
-  <object class='tableauViz' style='display:none;'>
-    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-    <param name='embed_code_version' value='3' />
-    <param name='site_root' value='' />
-    <param name='name' value='MairaA-OnlineCanteenSystem-Dashboard/Dashboard1' />
-    <param name='tabs' value='no' />
-    <param name='toolbar' value='yes' />
-    <param name='static_image' value='https://public.tableau.com/static/images/Ma/MairaA-OnlineCanteenSystem-Dashboard/Dashboard1/1.png' />
-    <param name='animate_transition' value='yes' />
-    <param name='display_static_image' value='yes' />
-    <param name='display_spinner' value='yes' />
-    <param name='display_overlay' value='yes' />
-    <param name='display_count' value='yes' />
-    <param name='language' value='en-US' />
-    <param name='filter' value='publish=yes' />
-  </object>
-</div>
-<script type='text/javascript'>
-  var divElement = document.getElementById('viz1749197883152');
-  var vizElement = divElement.getElementsByTagName('object')[0];
-  if (divElement.offsetWidth > 800) {
-    vizElement.style.width = '100%';
-    vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
-  } else if (divElement.offsetWidth > 500) {
-    vizElement.style.width = '100%';
-    vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
-  } else {
-    vizElement.style.width = '100%';
-    vizElement.style.height = '1327px';
-  }
-  var scriptElement = document.createElement('script');
-  scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-  vizElement.parentNode.insertBefore(scriptElement, vizElement);
-</script>
+<div class='tableauPlaceholder' id='viz1751134280482' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ma&#47;MairaA-OnlineCanteenSystem-Dashboard&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='MairaA-OnlineCanteenSystem-Dashboard&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ma&#47;MairaA-OnlineCanteenSystem-Dashboard&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1751134280482');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='1327px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
 <br>
 <section class="chart-description">
   <h3>What This Dashboard Shows</h3>
@@ -266,6 +227,19 @@
     system gets more orders on average. It's a great way
      to understand what's working and where the canteen can grow next!</p>
 </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <br>
 <br>
@@ -491,8 +465,6 @@ Over 84% of respondents are students,  this is a huge insight that anchors every
     </p>
   </td>
 
-  <div class='tableauPlaceholder' id='viz1751037214109' style='position: relative'><noscript><a href='#'><img alt='Sheet 10 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ma&#47;MairaAdil-tfghhgjijijijij&#47;Sheet10&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='MairaAdil-tfghhgjijijijij&#47;Sheet10' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ma&#47;MairaAdil-tfghhgjijijijij&#47;Sheet10&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1751037214109');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-</tr>
 
 
 </tr>
